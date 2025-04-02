@@ -160,7 +160,7 @@ python index.py --disable-gpu
 
 **💡 Lưu ý:**
 
-- **Lần đầu:** Chạy **Set up (1)** để thiết lập cấu hình cần thiết, thực hiện theo hướng dẫn trong video.
+- **Lần đầu:** Chạy **Set up (1)** để thiết lập cấu hình cần thiết.
 - **Những lần sau:** Chạy **Auto (2)** để tự động thực thi theo luồng đã lập trình.
 
 ---
@@ -177,6 +177,14 @@ self.receive_address = [
     '0x0765ddaade239da020a510324cfd0cec05772488',
     '0xa028341248122862b459926bdf74f93a65d21f27',
 ]
+```
+
+### 🔹 **Thay đổi số lần gửi token**
+
+Tìm đoạn bên dưới trong file `index.py`. Thay đổi `10` thành số bất kỳ
+
+```python
+times = 10
 ```
 
 ### 🔹 **Thay đổi số lượng profile chạy đồng thời**
