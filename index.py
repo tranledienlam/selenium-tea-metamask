@@ -17,6 +17,10 @@ class Auto:
             '0x73e91fa6fac157e9f814b00d8abf20dfdccc28f6',
             '0x0765ddaade239da020a510324cfd0cec05772488',
             '0xa028341248122862b459926bdf74f93a65d21f27',
+            '0x5AF73945c433183043930c03CA5a1ABcEFF2Be81',
+            '0x4d65704F8c9ceFDE4dFdF24f8aDB43d06901C8d0',
+            '0x68359885ff67567f6C6F98577F4627F2D9494eCc',
+            '0x5Ee7fce0D26DAB7fc69ae6DEDc7C7C9f51124f3e',
         ]
     def send_token(self):
         random_address = random.choice(self.receive_address)
