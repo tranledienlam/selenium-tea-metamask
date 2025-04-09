@@ -60,13 +60,15 @@ class Auto:
                             symbol='TEA', 
                             block_explorer='https://sepolia.tea.xyz')
         times = 10
+        success_count = 0
         for i in range(times):
-            if not self.send_token():
-                self.node.log(f'Send token thành công {i}/{times}')
+            if self.send_token():
+                success_count += 1
+            else:
                 break
             Utility.wait_time(10)
         
-        self.node.snapshot(message=f'Send token thành công {times} lần')
+        self.node.snapshot(message=f'Send token thành công {success_count} lần')
         return True
     
 class Setup:
