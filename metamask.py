@@ -218,9 +218,9 @@ class Auto:
                 self.node.snapshot('Không tìm thấy màn hình import hoặc unlock')
                 return False
             
-        if self.node.get_text(By.TAG_NAME, 'h2') != 'Protect your funds':
+        if self.node.get_text(By.TAG_NAME, 'h2') == 'Protect your funds':
             self.node.find_and_click(By.XPATH, '//button[contains(text(), "Got it")]')
-            
+
         self.change_network(network_name='Tea Sepolia Testnet', 
                             rpc_url='https://tea-sepolia.g.alchemy.com/public',
                             chain_id='10218', 
